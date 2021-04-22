@@ -13,8 +13,7 @@ public class ArmStrongNumber {
 				a=num%10;
 				num=num/10;
 				res=res+(a*a*a*a);
-			
-			}
+		                     }
 			if(temp==res) {
 				System.out.println("It is an ArmStrong Number");
 			}
@@ -25,7 +24,5 @@ public class ArmStrongNumber {
 	catch(Exception e) {
 		System.out.println("Enter a valid input");
 	}
-	
 	}
-
 }
