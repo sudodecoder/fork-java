@@ -1,3 +1,5 @@
+package com.dcs.edu;
+
 import java.util.Scanner;
 class Calculate {
 	public static void main(String[] args) {
@@ -8,14 +10,14 @@ class Calculate {
 		System.out.println("Enter the breadth of a rectangle");
 		double b=scan.nextDouble();
 		Rectangle r=new Rectangle(l,b);
-		r.area();
-		r.perimeter();
+		r.calculateArea();
+		r.calculatePerimeter();
 		
 		System.out.println("Enter the side of a Square");
 		double side=scan.nextDouble();
 		Square s=new Square(side);
-		s.area();
-		s.perimeter();
+		s.calculateArea();
+		s.calculatePerimeter();
 		
 	}
 		catch(Exception e) {

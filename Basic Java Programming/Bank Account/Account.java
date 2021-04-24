@@ -1,0 +1,22 @@
+package com.dcs.edu;
+
+import java.util.Scanner;
+
+public class Account {
+	double balanceAmount=0;
+	double totalAmount=20000;
+	public void debit() {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the amount to be debited");
+		double debitAmount=scan.nextDouble();
+		if(debitAmount>totalAmount) {
+			System.out.println("The Account balance : "+balanceAmount);
+			System.out.println("Debit amount exceeded account balance");
+		}
+		else {
+		balanceAmount=totalAmount-debitAmount;
+		System.out.println("The Remaining Account Balance : "+balanceAmount);
+	         }
+		}
+
+}
