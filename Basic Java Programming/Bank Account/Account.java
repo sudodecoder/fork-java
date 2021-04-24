@@ -11,7 +11,7 @@ public class Account {
 		System.out.println("Enter the amount to be debited");
 		double debitAmount=scan.nextDouble();
 		if(debitAmount>totalAmount) {
-			System.out.println("The Account balance : "+balanceAmount);
+			System.out.println("The Account balance : "+totalAmount);
 			System.out.println("Debit amount exceeded account balance");
 		}
 		else {
